@@ -88,9 +88,7 @@ class _LoginBodyState extends State<LoginBody> {
                         isTailor = !isTailor;
                         setState(() {});
                       },
-                      child: CustomInputCertificate(
-                        isTailor: isTailor,
-                      ))
+                      child: const CustomInputCertificate())
                   : const SizedBox(),
               const SizedBox(
                 height: 30,

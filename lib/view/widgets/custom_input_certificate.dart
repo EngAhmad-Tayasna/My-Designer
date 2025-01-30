@@ -2,15 +2,9 @@ import 'package:ahmad_tayasna/utils/styles.dart';
 import 'package:ahmad_tayasna/view/widgets/custom_text.dart';
 import 'package:flutter/material.dart';
 
-class CustomInputCertificate extends StatefulWidget {
-  CustomInputCertificate({super.key, required this.isTailor});
-  bool isTailor;
+class CustomInputCertificate extends StatelessWidget {
+  const CustomInputCertificate({super.key});
 
-  @override
-  State<CustomInputCertificate> createState() => _CustomInputCertificateState();
-}
-
-class _CustomInputCertificateState extends State<CustomInputCertificate> {
   @override
   Widget build(BuildContext context) {
     return Row(
@@ -30,6 +24,5 @@ class _CustomInputCertificateState extends State<CustomInputCertificate> {
         ),
       ],
     );
-    ;
   }
 }
