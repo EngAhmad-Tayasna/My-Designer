@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class AppColors {
- final  Color kPrimaryColor = const Color(0xffFFF6ED);  
- final  Color kSecondaryColor = const Color(0xffE6BEAE);  
- final  Color kThirdColor = const Color(0xffB2967D);  
- final  Color kBackgroundButtonColor = const Color(0xff524539);  
- final  Color kTextPrimaryColor = const Color(0xffB2967D);  
- final  Color kTextSecondaryColor = const Color(0xff524539);  
+abstract class AppColors {
+  static const kPrimaryColor = Color(0xffFFF6ED);
+  static const kSecondaryColor = Color(0xffE6BEAE);
+  static const kThirdColor = Color(0xffB2967D);
+  static const kBackgroundButtonColor = Color(0xff524539);
+  static const kTextPrimaryColor = Color(0xffB2967D);
+  static const kBorderColor = Color(0xffC7A597);
 }
