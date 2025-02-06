@@ -1,4 +1,4 @@
-import 'package:ahmad_tayasna/view/widgets/sing_up_body.dart';
+import 'package:ahmad_tayasna/view/widgets/signup/sing_up_body.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatelessWidget {

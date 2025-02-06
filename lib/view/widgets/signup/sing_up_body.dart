@@ -1,8 +1,8 @@
 import 'package:ahmad_tayasna/constants.dart';
 import 'package:ahmad_tayasna/view/widgets/custom_button.dart';
-import 'package:ahmad_tayasna/view/widgets/custom_certificate.dart';
-import 'package:ahmad_tayasna/view/widgets/custom_signup_check_account.dart';
-import 'package:ahmad_tayasna/view/widgets/custom_input_login.dart';
+import 'package:ahmad_tayasna/view/widgets/signup/custom_certificate.dart';
+import 'package:ahmad_tayasna/view/widgets/signup/custom_signup_check_account.dart';
+import 'package:ahmad_tayasna/view/widgets/custom_input.dart';
 import 'package:flutter/material.dart';
 
 class SingUpBody extends StatelessWidget {

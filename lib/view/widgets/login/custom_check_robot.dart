@@ -2,8 +2,8 @@ import 'package:ahmad_tayasna/constants.dart';
 import 'package:flutter/material.dart';
 
 class CustomCheckRobot extends StatefulWidget {
-  CustomCheckRobot({super.key, required this.isChecked});
   bool isChecked;
+  CustomCheckRobot({super.key, required this.isChecked});
 
   @override
   State<CustomCheckRobot> createState() => _CustomCheckRobotState();

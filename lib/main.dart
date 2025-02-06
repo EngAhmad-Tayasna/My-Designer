@@ -1,4 +1,5 @@
 import 'package:ahmad_tayasna/utils/app_colors.dart';
+import 'package:ahmad_tayasna/view/screens/home_sreen.dart';
 import 'package:ahmad_tayasna/view/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         Locale('en', ''),
       ],
       locale: const Locale('ar', ''),
-      home: const SplashScreen(),
+      home: const HomeScreen(),
     );
   }
 }

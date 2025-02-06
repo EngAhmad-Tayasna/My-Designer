@@ -1,12 +1,12 @@
 import 'package:ahmad_tayasna/constants.dart';
 import 'package:ahmad_tayasna/utils/styles.dart';
 import 'package:ahmad_tayasna/view/widgets/custom_button.dart';
-import 'package:ahmad_tayasna/view/widgets/custom_check_remember.dart';
-import 'package:ahmad_tayasna/view/widgets/custom_check_robot.dart';
-import 'package:ahmad_tayasna/view/widgets/custom_input_certificate.dart';
+import 'package:ahmad_tayasna/view/widgets/login/custom_check_remember.dart';
+import 'package:ahmad_tayasna/view/widgets/login/custom_check_robot.dart';
+import 'package:ahmad_tayasna/view/widgets/login/custom_input_certificate.dart';
 import 'package:ahmad_tayasna/view/widgets/custom_text.dart';
-import 'package:ahmad_tayasna/view/widgets/custom_input_login.dart';
-import 'package:ahmad_tayasna/view/widgets/custom_textCheck_account.dart';
+import 'package:ahmad_tayasna/view/widgets/custom_input.dart';
+import 'package:ahmad_tayasna/view/widgets/signup/custom_textCheck_account.dart';
 import 'package:flutter/material.dart';
 
 class LoginBody extends StatefulWidget {
