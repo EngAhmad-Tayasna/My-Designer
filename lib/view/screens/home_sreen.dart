@@ -1,8 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:ahmad_tayasna/constants.dart';
+import 'package:ahmad_tayasna/view/screens/dress_design_up.dart';
 import 'package:ahmad_tayasna/view/widgets/bottom_sheet_navigator.dart';
 import 'package:ahmad_tayasna/view/widgets/button_navigator.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -40,7 +42,7 @@ class HomeScreenBody extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ButtonNavigator(
-                onPressed: () {},
+                onPressed: () => Get.off(() => DressDesignUp()),
                 text: 'تصميم الفستان',
               ),
               ButtonNavigator(
