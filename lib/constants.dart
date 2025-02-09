@@ -2,6 +2,15 @@ import 'package:ahmad_tayasna/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 abstract class Constants {
+  static  List<String> fabrictpye = [
+    'حرير',
+    'ساتان',
+    'شيفون',
+    'تل',
+    'دانتيل',
+    'كريب',
+    'مخمل',
+  ];
    static Map<String, String> pathDress = {
     'assets/svg/dress-1.svg': "التفاحة ",
     'assets/svg/dress-2.svg': "الساعة الرملية",
