@@ -1,3 +1,4 @@
+import 'package:ahmad_tayasna/view/widgets/choose_dress_color/choose_drees_color_body.dart';
 import 'package:flutter/material.dart';
 
 class ChooseDressColor extends StatelessWidget {
@@ -5,6 +6,6 @@ class ChooseDressColor extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const ChooseDressColorBody();
   }
 }

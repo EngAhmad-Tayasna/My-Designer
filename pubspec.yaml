@@ -31,6 +31,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_colorpicker: ^1.1.0
   flutter_localization: ^0.3.1
   flutter_svg: ^2.0.17
   get: ^4.6.6

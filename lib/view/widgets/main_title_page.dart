@@ -9,6 +9,7 @@ class MainTitlePage extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(35, 60, 38, 0),
       child: Text(
         title,
+        textAlign: TextAlign.center,
         style: const TextStyle(
           fontSize: 40,
         ),
