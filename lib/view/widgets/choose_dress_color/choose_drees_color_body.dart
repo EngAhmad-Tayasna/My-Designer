@@ -1,11 +1,11 @@
 import 'package:ahmad_tayasna/utils/app_colors.dart';
 import 'package:ahmad_tayasna/view/screens/choose_fabric_type.dart';
 import 'package:ahmad_tayasna/view/screens/dress_design_down.dart';
-import 'package:ahmad_tayasna/view/widgets/choose_dress_color/custom_pick_color.dart';
 import 'package:ahmad_tayasna/view/widgets/choose_dress_color/view_color_selected.dart';
 import 'package:ahmad_tayasna/view/widgets/dress_design/button_dress_route.dart';
 import 'package:ahmad_tayasna/view/widgets/main_title_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_colorpicker/flutter_colorpicker.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
@@ -29,8 +29,28 @@ class _ChooseDressColorBodyState extends State<ChooseDressColorBody> {
           const SizedBox(
             height: 30,
           ),
-          CustomPickColor(
-            selectedColor: selectedColor,
+          Center(
+            child: Container(
+              width: 350,
+              height: 380,
+              color: const Color(0xffF1D8CB),
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: ColorPicker(
+                  pickerColor: selectedColor,
+                  pickerAreaBorderRadius: const BorderRadius.all(
+                    Radius.circular(200),
+                  ),
+                  onColorChanged: (color) {
+                    setState(() {
+                      selectedColor = color;
+                    });
+                  },
+                  showLabel: false,
+                  pickerAreaHeightPercent: .8,
+                ),
+              ),
+            ),
           ),
           const SizedBox(
             height: 30,
@@ -51,16 +71,16 @@ class _ChooseDressColorBodyState extends State<ChooseDressColorBody> {
                 ),
               ],
             ),
-            child: ViewColorSelected(
-              selectedColor: selectedColor,
-            ),
+            child: ViewColorSelected(selectedColor: selectedColor),
           ),
           const SizedBox(
             height: 60,
           ),
           ButtonDressRoute(
             onPressedNext: () {
-              Get.off(() => const ChooseFabricType());
+              Get.off(() => ChooseFabricType(
+                    selectedColor: selectedColor,
+                  ));
             },
             onPressedLast: () {
               Get.off(() => const DressDesignDown());

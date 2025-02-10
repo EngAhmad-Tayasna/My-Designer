@@ -1,5 +1,6 @@
 import 'package:ahmad_tayasna/utils/app_colors.dart';
 import 'package:ahmad_tayasna/view/screens/home_sreen.dart';
+import 'package:ahmad_tayasna/view/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';

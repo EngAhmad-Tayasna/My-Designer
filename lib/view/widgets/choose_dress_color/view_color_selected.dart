@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:ahmad_tayasna/utils/app_colors.dart';
 
 class ViewColorSelected extends StatelessWidget {
-  final Color selectedColor ;
+  final Color selectedColor;
   const ViewColorSelected({
     super.key,
     required this.selectedColor,
@@ -28,9 +28,12 @@ class ViewColorSelected extends StatelessWidget {
               height: 5,
             ),
             Text(
-                '#${selectedColor.value.toRadixString(16).substring(2).toUpperCase()}',
-                style: const TextStyle(
-                    color: AppColors.kBackgroundButtonColor, fontSize: 16))
+              '#${selectedColor.value.toRadixString(16).substring(2).toUpperCase()}',
+              style: const TextStyle(
+                color: AppColors.kBackgroundButtonColor,
+                fontSize: 16,
+              ),
+            )
           ],
         ),
         Container(

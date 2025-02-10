@@ -6,11 +6,10 @@ import 'package:ahmad_tayasna/view/widgets/fabric_type/custom_choose_fabric_type
 import 'package:ahmad_tayasna/view/widgets/main_title_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 class ChooseFabricTypeBody extends StatelessWidget {
-  const ChooseFabricTypeBody({super.key});
-
+  const ChooseFabricTypeBody({super.key, required this.selectedColor});
+  final Color selectedColor;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -41,9 +40,9 @@ class ChooseFabricTypeBody extends StatelessWidget {
           height: 10,
         ),
         ButtonDressRoute(onPressedNext: () {
-          Get.off(() => const ChooseDressColor());
+          Get.off(() =>  YourDress(colorDress: selectedColor,));
         }, onPressedLast: () {
-          Get.off(() => const YourDress());
+          Get.off(() => const ChooseDressColor());
         }),
       ],
     );
